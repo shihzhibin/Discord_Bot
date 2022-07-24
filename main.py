@@ -14,7 +14,7 @@ async def play(ctx, url : str):
      voiceChannel = discord.utils.get(ctx.guild.voice_channels, name='哈利池')
      voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
      await voiceChannel.connect()
-
+bot.run("TOKEN")
 
 
 @bot.event
@@ -22,7 +22,7 @@ async def on_member_join(member):
     channel = bot.get_channel(999653093929123935)
     tmpmsg = await channel.send(f"<@{member.id}> 早安午安晚安 (ΦωΦ)")
 #start the bot with our token
-bot.run("TOKEN")
+
 
 
 
